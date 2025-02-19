@@ -2,6 +2,7 @@
 const length = 16;
 const containerSize = 480;
 let tileSize = containerSize / length;
+let colorToggle = false;
 
 let container = document.querySelector(".container");
 container.setAttribute("style", `width: ${containerSize}px; height: ${containerSize}px;`);
@@ -16,12 +17,18 @@ for (let i = 0; i < length * length; i++) {
 
 let isDrawing = false;
 
-// Function to color in cells on mousedown and mouseover
+// Function to color in cells only on mousedown and mouseover
 function colorTile(e) {
     if (!isDrawing) return;
-    e.target.style.backgroundColor = "black";
+
+    // false = black, true = white
+    if (!colorToggle) {
+        e.target.style.backgroundColor = "black";
+    } else {
+        e.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    }
 }
-// Add mousedown and mouseover event listeners for each time
+// Add mousedown and mouseover event listeners for each tile
 const tiles = document.querySelectorAll(".tile");
 tiles.forEach(tile => {
     tile.addEventListener("mousedown", (e) => {
@@ -31,7 +38,21 @@ tiles.forEach(tile => {
     tile.addEventListener("mouseover", colorTile);
 });
 
-// Check for mouseup
+// Check for mouseup to stop drawing
 document.addEventListener("mouseup", () => {
     isDrawing = false;
+});
+
+// Check clearing the page on button click
+let btnErase = document.querySelector("#button-erase");
+btnErase.addEventListener("click", () => {
+    tiles.forEach(cell => {
+        cell.style.backgroundColor = "white";
+    });
+});
+
+// Check clearing the page on button click
+let btnColor = document.querySelector("#button-color");
+btnColor.addEventListener("click", () => {
+        colorToggle = !colorToggle;
 });

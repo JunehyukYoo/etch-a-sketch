@@ -5,8 +5,8 @@ A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
 ## Features
 - Interactive grid where users can draw by hovering over cells
 - Adjustable grid size for more precise or broad drawings
-- Reset button to clear the sketchpad
-- Optional color modes (e.g., black, rainbow, or shading effect)
+- Erase button to clear the sketchpad
+- Optional color modes (so far: black and rainbow)
 
 ## Technologies Used
 - **HTML**: Structure of the webpage
@@ -24,14 +24,14 @@ A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
    ```
 3. Open `index.html` in your browser.
 
-## Usage (in progress)
-- Hover over the grid to "draw"
+## Usage
+- Click and hover over the grid to "draw"
 - Use the buttons to:
-  - Change grid size
-  - Reset the sketchpad
+  - Erase the sketchpad
   - Toggle different color modes
 
 ## Future Improvements
+- Allow for selection of different colors
 - Add an eraser tool
 - Save and load drawings
 - Mobile-friendly version
