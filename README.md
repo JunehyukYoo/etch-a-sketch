@@ -2,6 +2,9 @@
 
 A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
 
+## Demo Link
+https://junehyukyoo.github.io/odin-landing-page/
+
 ## Features
 - Interactive grid where users can draw by hovering over cells
 - Adjustable grid size for more precise or broad drawings
@@ -35,5 +38,3 @@ A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
 - Add an eraser tool
 - Save and load drawings
 - Mobile-friendly version
-
-
