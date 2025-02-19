@@ -3,7 +3,7 @@
 A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
 
 ## Demo Link
-https://junehyukyoo.github.io/odin-landing-page/
+https://junehyukyoo.github.io/etch-a-sketch
 
 ## Features
 - Interactive grid where users can draw by hovering over cells
