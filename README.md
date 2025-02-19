@@ -24,7 +24,7 @@ A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
    ```
 3. Open `index.html` in your browser.
 
-## Usage
+## Usage (in progress)
 - Hover over the grid to "draw"
 - Use the buttons to:
   - Change grid size
@@ -36,6 +36,4 @@ A simple Etch-a-Sketch simulation built using HTML, CSS, and JavaScript.
 - Save and load drawings
 - Mobile-friendly version
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
 
